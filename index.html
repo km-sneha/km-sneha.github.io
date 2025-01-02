@@ -331,26 +331,143 @@
 
                 </div> <!-- end works-portfolio -->
 
+<!-- Testimonial Section -->
+<div class="row testimonials">
+  <div class="column lg-12" data-animate-block>
+  
+    <!-- Attractive Title for Testimonials -->
+    <h2 class="testimonial-section-title">Guidance from Industry Experts: Shaping My Cybersecurity Career</h2>
 
-                <div class="row testimonials">
-                    <div class="column lg-12" data-animate-block>
-        
-                        <div class="swiper-container testimonial-slider" data-animate-el>
-        
-                            <div class="swiper-wrapper">
+    <div class="swiper-container testimonial-slider" data-animate-el>
+      <!-- Swiper Wrapper for slides -->
+      <div class="swiper-wrapper">
 
-                
-                                <div class="testimonial-slider__slide swiper-slide">
-                                    <div class="testimonial-slider__author">
-                                        <cite class="testimonial-slider__cite">
-                                            <strong>Arshad U</strong>
-                                            <span>Cybersecurity Analyst</span>
-                                        </cite>
-                                    </div>
-                                    <p>
-                                  Arshad U is a skilled Cybersecurity Analyst and Penetration Tester, specializing in web, network, and mobile application security.With hands-on experience in identifying vulnerabilities, he is committed to safeguarding digital systems from potential threats.
-                                    </p>
-                                </div> <!-- end testimonial-slider__slide -->
+        <!-- Testimonial 1 -->
+        <div class="testimonial-slider__slide swiper-slide">
+          <div class="testimonial-slider__author">
+            <cite class="testimonial-slider__cite">
+              <strong>Arshad U</strong>
+              <span>Cybersecurity Analyst</span>
+            </cite>
+          </div>
+          <p>
+            Arshad U is a skilled Cybersecurity Analyst and Penetration Tester, specializing in web, network, and mobile application security. With hands-on experience in identifying vulnerabilities, he is committed to safeguarding digital systems from potential threats.
+          </p>
+        </div> <!-- end testimonial-slider__slide -->
+
+      </div> <!-- end swiper-wrapper -->
+
+      <!-- Swiper Pagination (if needed) -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Swiper Navigation Buttons (optional) -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div> <!-- end swiper-container -->
+  </div>
+</div>
+
+<style>
+  /* Styling the Testimonial Section */
+  .testimonials {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+
+  /* Attractive Title Style */
+  .testimonial-section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  /* Testimonial Styling */
+  .testimonial-slider__slide {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+
+  .testimonial-slider__author {
+    margin-bottom: 15px;
+  }
+
+  .testimonial-slider__cite {
+    font-size: 18px;
+  }
+
+  .testimonial-slider__cite strong {
+    font-size: 22px;
+  }
+
+  .testimonial-slider__cite span {
+    color: #777;
+    font-size: 14px;
+  }
+
+  .testimonial-slider__slide p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  /* Swiper Pagination & Navigation Styles */
+  .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #007BFF;
+    opacity: 0.7;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+<script>
+  // Initialize Swiper
+  const swiper = new Swiper('.testimonial-slider', {
+    loop: true, // Enables continuous loop mode
+    slidesPerView: 1, // Number of slides to show at once
+    spaceBetween: 20, // Space between slides
+    pagination: {
+      el: '.swiper-pagination', // Pagination element
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next', // Next button
+      prevEl: '.swiper-button-prev', // Prev button
+    },
+    autoplay: {
+      delay: 5000, // Delay between slide transitions (in ms)
+    },
+  });
+</script>
+
                 
                  <div class="testimonial-slider__slide swiper-slide">
                                     <div class="testimonial-slider__author">
