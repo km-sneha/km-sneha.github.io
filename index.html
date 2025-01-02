@@ -387,6 +387,51 @@ Elizabeth Varghese M is an Assistant Professor in the Department of Computer App
                 </div> <!-- end row testimonials -->
 
             </section> <!-- end s-works -->
+            <!-- Dynamic Blog Section using JavaScript -->
+<section class="blog" id="blog-list">
+  <h2>Latest Articles</h2>
+</section>
+
+<script>
+  const blogPosts = [
+    {
+      title: "How to Build a Responsive Portfolio",
+      excerpt: "In this article, I will walk you through the process of creating a fully responsive portfolio website using HTML, CSS, and JavaScript...",
+      link: "blog-post-1.html"
+    },
+    {
+      title: "The Best Web Development Tools for 2025",
+      excerpt: "Web development tools are constantly evolving. Here are some of the top tools I use to streamline my workflow...",
+      link: "blog-post-2.html"
+    },
+    {
+      title: "Why You Should Learn JavaScript in 2025",
+      excerpt: "JavaScript continues to be a key language in the world of web development. In this post, I’ll discuss why JavaScript is essential for every developer...",
+      link: "blog-post-3.html"
+    }
+    // Add more posts to the array
+  ];
+
+  const blogList = document.getElementById("blog-list");
+
+  blogPosts.forEach(post => {
+    const postElement = document.createElement("div");
+    postElement.classList.add("blog-post");
+
+    postElement.innerHTML = `
+      <h3><a href="${post.link}">${post.title}</a></h3>
+      <p class="excerpt">${post.excerpt}</p>
+      <a href="${post.link}" class="read-more">Read More</a>
+    `;
+
+    blogList.appendChild(postElement);
+  });
+</script>
+
+<style>
+  /* Same styles as in the static Blog Section */
+</style>
+
 
 
             <!-- ### contact
